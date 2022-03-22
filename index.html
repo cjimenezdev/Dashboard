@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./app/img/ico.svg" type="image/x-icon">
+    <title>Carlos Jimenez || Dashboard || Web Site</title>
+    <link rel="stylesheet" href="./app/css/app.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="nav__bar d-sm-flex d-xl-flex d-xxl-flex">
+            <div class="navbar-brand position-absolute m-0 w-100">
+                <img src="./app/img/ico.svg" class="img-fluid m-auto" alt="">
+            </div>
+            <button class="btn-toggle">
+                <i class="fas fa-times navbar-toggler-icon"></i>
+            </button>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ordenes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ventas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Configuraciones</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                    <!-- Toggle button -->
+                    <button class="navbar-toggler" type="button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <!-- Right elements -->
+                    <div class="d-flex align-items-center ms-auto me-3">
+                        <!-- Icon -->
+                        <div class="moon_sun">
+                            <span class="moon">
+                            <i class="fas fa-moon"></i></span>
+                            <span class="sun d-none"><i class="fas fa-sun"></i></span>
+                        </div>
+                        <div class="profile me-3 ms-2">
+                            <p class="mb-0">Carlos Jimenez</p>
+                            <span class="ms-auto ">Administrador</span>
+                        </div>
+                        <!-- Avatar -->
+                        <div class="dropdown" style="z-index: 3;">
+                            <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                <img src="./app/img/usuario.png" class="rounded-circle " height="25 " alt="" loading="lazy " />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-sm-start dropdown-menu-start" aria-labelledby="navbarDropdownMenuAvatar">
+                                <li>
+                                    <a class="dropdown-item " href="# ">Cerrar Sesión</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right elements -->
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+            <div class="row ">
+                <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-9 ">
+                    <div class="dash__left ps-xl-0 ">
+                        <div class="row mt-0 ">
+                            <div class="col-12 ">
+                                <div class="title__dash mb-lg-0 ">
+                                    <h3>Tablero</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+                                <div class="card ">
+                                    <div class="card-body ">
+                                        <div class="row ">
+                                            <div class="col-7 m-auto ">
+                                                <div class="dash__details ">
+                                                    <img src="./app/img/ventas.png " class="img-fluid mb-2" width="35" />
+                                                    <h6 class="mb-2">Total Ventas</h6>
+                                                    <h3 class="mb-3">$500</h3>
+                                                    <span>Las 24</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 m-auto ">
+                                                <div class="d-inline-flex text-center w-100 ">
+                                                    <span class="bg-success rounded-circle ms-auto " style="border: 30px solid "></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+                                <div class="card ">
+                                    <div class="card-body ">
+                                        <div class="row ">
+                                            <div class="col-7 m-auto ">
+                                                <div class="dash__details ">
+                                                    <img src="./app/img/reports.png " class="img-fluid mb-2 " style="width: 35px; "></i>
+                                                    <h6 class="mb-2 ">Total Reportes</h6>
+                                                    <h3 class="mb-3 ">$500</h3>
+                                                    <span>Las 24</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 m-auto ">
+                                                <div class="d-inline-flex text-center w-100 ">
+                                                    <span class="bg-success rounded-circle ms-auto " style="border: 30px solid "></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+                                <div class="card ">
+                                    <div class="card-body ">
+                                        <div class="row ">
+                                            <div class="col-7 m-auto ">
+                                                <div class="dash__details">
+                                                    <img src="./app/img/gasto.png " class="img-fluid mb-2 " style="width: 35px; "></i>
+                                                    <h6 class="mb-2 ">Total Ordenes</h6>
+                                                    <h3 class="mb-3 ">$500</h3>
+                                                    <span>Las 24</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 m-auto ">
+                                                <div class="expenses ">
+                                                    <circle cx="38 " cy="38 " r="36 "></circle>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title__table ">
+                            <h4>Clientes Resientes</h4>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 mb-4 ">
+                                <div class="card ">
+                                    <div class="card-body ">
+                                        <div class="table-responsive ">
+                                            <table class="table ">
+                                                <thead class="bg-light ">
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Title</th>
+                                                        <th>Status</th>
+                                                        <th>Position</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg " alt=" " style="width: 45px; height: 45px " class="rounded-circle " />
+                                                                <div class="ms-3 ">
+                                                                    <p class="fw-bold mb-1 ">John Doe</p>
+                                                                    <p class="text-muted mb-0 ">john.doe@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="fw-normal mb-1 ">Software engineer</p>
+                                                            <p class="text-muted mb-0 ">IT department</p>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-success rounded-pill ">Active</span>
+                                                        </td>
+                                                        <td>Senior</td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-link btn-sm btn-rounded ">
+                                                    Edit
+                                                  </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <img src="https://mdbootstrap.com/img/new/avatars/6.jpg " class="rounded-circle " alt=" " style="width: 45px; height: 45px " />
+                                                                <div class="ms-3 ">
+                                                                    <p class="fw-bold mb-1 ">Alex Ray</p>
+                                                                    <p class="text-muted mb-0 ">alex.ray@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="fw-normal mb-1 ">Consultant</p>
+                                                            <p class="text-muted mb-0 ">Finance</p>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-primary rounded-pill ">Onboarding</span
+                                                    >
+                                                </td>
+                                                <td>Junior</td>
+                                                <td>
+                                                  <button
+                                                          type="button "
+                                                          class="btn btn-link btn-rounded btn-sm fw-bold "
+                                                          data-mdb-ripple-color="dark "
+                                                          >
+                                                    Edit
+                                                  </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <div class="d-flex align-items-center ">
+                                                    <img
+                                                        src="https://mdbootstrap.com/img/new/avatars/7.jpg "
+                                                        class="rounded-circle "
+                                                        alt=" "
+                                                        style="width: 45px; height: 45px "
+                                                        />
+                                                    <div class="ms-3 ">
+                                                      <p class="fw-bold mb-1 ">Kate Hunington</p>
+                                                      <p class="text-muted mb-0 ">kate.hunington@gmail.com</p>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td>
+                                                  <p class="fw-normal mb-1 ">Designer</p>
+                                                  <p class="text-muted mb-0 ">UI/UX</p>
+                                                </td>
+                                                <td>
+                                                  <span class="badge badge-warning rounded-pill ">Awaiting</span>
+                                                        </td>
+                                                        <td>Senior</td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-link btn-rounded btn-sm fw-bold " data-mdb-ripple-color="dark ">
+                                                    Edit
+                                                  </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title__table ">
+                            <h4>Ordenes Actuales</h4>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 ">
+                                <div class="card ">
+                                    <div class="card-body ">
+                                        <div class="table-responsive ">
+                                            <table class="table ">
+                                                <thead class="bg-light ">
+                                                    <tr>
+                                                        <th>Nombre</th>
+                                                        <th>Titulo</th>
+                                                        <th>Estado</th>
+                                                        <th>Posición</th>
+                                                        <th>Acciones</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg " alt=" " style="width: 45px; height: 45px " class="rounded-circle " />
+                                                                <div class="ms-3 ">
+                                                                    <p class="fw-bold mb-1 ">John Doe</p>
+                                                                    <p class="text-muted mb-0 ">john.doe@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="fw-normal mb-1 ">Software engineer</p>
+                                                            <p class="text-muted mb-0 ">IT department</p>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-success rounded-pill ">Activo</span>
+                                                        </td>
+                                                        <td>Senior</td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-link btn-sm btn-rounded ">
+                                                    Edit
+                                                  </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <img src="https://mdbootstrap.com/img/new/avatars/6.jpg " class="rounded-circle " alt=" " style="width: 45px; height: 45px " />
+                                                                <div class="ms-3 ">
+                                                                    <p class="fw-bold mb-1 ">Alex Ray</p>
+                                                                    <p class="text-muted mb-0 ">alex.ray@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="fw-normal mb-1 ">Consultant</p>
+                                                            <p class="text-muted mb-0 ">Finance</p>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-primary rounded-pill ">Onboarding</span
+                                                    >
+                                                </td>
+                                                <td>Junior</td>
+                                                <td>
+                                                  <button
+                                                          type="button "
+                                                          class="btn btn-link btn-rounded btn-sm fw-bold "
+                                                          data-mdb-ripple-color="dark "
+                                                          >
+                                                    Edit
+                                                  </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <div class="d-flex align-items-center ">
+                                                    <img
+                                                        src="https://mdbootstrap.com/img/new/avatars/7.jpg "
+                                                        class="rounded-circle "
+                                                        alt=" "
+                                                        style="width: 45px; height: 45px "
+                                                        />
+                                                    <div class="ms-3 ">
+                                                      <p class="fw-bold mb-1 ">Kate Hunington</p>
+                                                      <p class="text-muted mb-0 ">kate.hunington@gmail.com</p>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td>
+                                                  <p class="fw-normal mb-1 ">Designer</p>
+                                                  <p class="text-muted mb-0 ">UI/UX</p>
+                                                </td>
+                                                <td>
+                                                  <span class="badge badge-warning rounded-pill ">Awaiting</span>
+                                                        </td>
+                                                        <td>Senior</td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-link btn-rounded btn-sm fw-bold " data-mdb-ripple-color="dark ">
+                                                    Edit
+                                                  </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-3 ">
+                    <div class="dash__right ">
+                        <div class="row ">
+                            <div class="title__sales ">
+                                <h4>Ventas</h4>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 col-sm-6 col-lg-6 col-xl-12 mb-4 ">
+                                <div class="card ">
+                                    <div class="card-body ">
+                                        <div class="d-flex align-items-center " style="gap: 1rem; ">
+                                            <div class="icon ">
+                                                <img src="./app/img/caja.png " alt=" " style="width: 35px; height: 35px " class="rounded-circle " />
+                                            </div>
+                                            <div style="display: flex; align-items: flex-start; margin: 0; width: 100%; justify-content: space-between; ">
+                                                <div class="info ">
+                                                    <p style="font-size: 1rem; " class="fw-bold mb-0 ">Productos</p>
+                                                    <small style="font-size: 10px; " class="text-muted mb-0 ">Last 24 hours</small>
+                                                </div>
+                                                <span class="mb-0 text-success ">30%</span>
+                                                <span class="text-muted mb-0 ">1234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-6 col-xl-12 mb-4 ">
+                                <div class="card ">
+                                    <div class="card-body ">
+                                        <div class="d-flex align-items-center " style="gap: 1rem; ">
+                                            <div class="icon ">
+                                                <img src="./app/img/cliente.png " alt=" " style="width: 35px; height: 35px " class="rounded-circle " />
+                                            </div>
+                                            <div style="display: flex; align-items: flex-start; margin: 0; width: 100%; justify-content: space-between; ">
+                                                <div class="info ">
+                                                    <p style="font-size: 1rem; " class="fw-bold mb-0 ">Ventas</p>
+                                                    <small style="font-size: 10px; " class="text-muted mb-0 ">Last 24 hours</small>
+                                                </div>
+                                                <span class="mb-0 text-success ">30%</span>
+                                                <span class="text-muted mb-0 ">1234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer w-100 d-flex justify-content-center align-items-center ">
+                <div class="footer__content text-center p-3 ps-0 ">
+                    <p class="mb-0 "><i class="fas fa-copyright "></i> 2022 Carlos Jiménez.</p>
+                    <a href="# ">Todos los derechos reservados.</a>
+                </div>
+            </footer>
+        </div>
+        <!--APP-->
+        <script src="./app/js/app.js "></script>
+        <!-- MDB -->
+        <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js "></script>
+</body>
+
+</html>
