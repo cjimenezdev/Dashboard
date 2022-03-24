@@ -27,10 +27,14 @@ body.dark {
     --bg-sidebar: #1c1d20;
 }
 
-html,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden !important;
+}
+
 body {
     width: 100%;
-    height:100%;
     font-family: 'Kanit', sans-serif !important;
     background-color: var(--bg-white) !important;
     user-select: none;
