@@ -353,6 +353,7 @@ tr th {
     }
     .footer .footer__content {
         margin-right: 0;
+        font-size:12px;
     }
 }
 
